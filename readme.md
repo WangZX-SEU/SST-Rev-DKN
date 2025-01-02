@@ -9,5 +9,6 @@ State change record:
 &nbsp;&nbsp;2024-10-08 Under review  
 &nbsp;&nbsp;2024-10-28 Awaiting Reviewer Scores  
 &nbsp;&nbsp;2024-11-26 Awaiting AE Recommendation  
+&nbsp;&nbsp;2025-01-02 Awaiting EIC Decision  
 
 We plan to open-source the code once the paper is accepted.
