@@ -1,7 +1,7 @@
 <p align="center">
 <h1 align="center">Data-driven Modeling with Deep Koopman Operator for Robust Path Tracking of Autonomous Vehicles</h1>
-<h3 class="is-size-4 has-text-weight-bold" style="color: orange;" align="center">
-    IEEE Transactions on Industrial Electronics, 2026
+<h3 align="center" style="color: orange;">
+    🎊🎊🎊 The paper has been accepted by <em>IEEE Transactions on Industrial Electronics</em>, Jan. 2026. 🎊🎊🎊
 </h3>
   <p align="center">
     <a href="https://scholar.google.com/citations?hl=zh-CN&user=G8sNV64AAAAJ" target="_blank"><strong>Zhuoxuan Wang</strong></a>
@@ -42,7 +42,7 @@ Inherent nonlinearity poses challenges for path tracking control of autonomous v
 ## 🧩 Source code
 We provide the source code for SST-Rev-DKN training and a pre-trained weight $(\mathcal{L}_{MW}=8)$ in `SST-Rev-DKN/Data/Weights/`.
 
-### Prerequisites
+### 🛠️ Prerequisites
 Our training environment is based on **Anaconda**. The key dependencies and versions are as follows:
 ```bash
 # Python
@@ -73,7 +73,7 @@ tqdm == 4.67.1
 
 > **Note 2:** For the complete dependencies, please refer to the **Usage** below. 
 
-### Usage
+### 🚀 Usage
 
 #### Dataset
 We provide an example dataset in [GoogleDrive](https://drive.google.com/drive/u/1/folders/1kNL4vJs-EyE-F0nHdsBcYA7ocwuNiJ_0). Please download the dataset/create your own dataset and place it under the `SST-Rev-DKN/Data/` directory before training.
