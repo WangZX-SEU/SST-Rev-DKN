@@ -39,12 +39,45 @@ Inherent nonlinearity poses challenges for path tracking control of autonomous v
 
 ## 🔗 Paper Link 
 
-## 📕 Dataset
-We provide an example dataset in [GoogleDrive](https://drive.google.com/drive/u/1/folders/1kNL4vJs-EyE-F0nHdsBcYA7ocwuNiJ_0). After downloading, you can extract it to the `SST-Rev-DKN/Data` directory (Just ).
-
 ## 🧩 Source code
-Releasing soon...
+We provide the source code for SST-Rev-DKN training and a pre-trained weight $(\mathcal{L}_{MW}=8)$.
+
+### Prerequisites
+Our training environment is based on **Anaconda**. The key dependencies and versions are as follows:
+```bash
+python == 3.10.1
+
+```
+> **Note:** Make sure that the PyTorch version is compatible with your **CUDA** and **Python** versions. 
+
+### Dataset
+We provide an example dataset in [GoogleDrive](https://drive.google.com/drive/u/1/folders/1kNL4vJs-EyE-F0nHdsBcYA7ocwuNiJ_0). Please downloading the dataset/create your own dataset and place it under the `SST-Rev-DKN/Data/` directory before training.
+
+### Usage
+```bash
+# Downloading and Unpackaging the Repository
+https://github.com/WangZX-SEU/SST-Rev-DKN
+
+# Navigate to project directory
+cd SST-Rev-DKN/Train/
+
+# Key Parameters
+"load_mode": 1 for training mode
+"X_EMB_SIZE": State embedding dimension
+"U_EMB_SIZE": Input embedding dimension
+"BATCH_SIZE": Batch size, default is 128
+"MEMORY_STEP": Memory window length
+
+# Start Training
+run "SST_Rev_DKN.py"
+```
 
 ## ✒️ Citation
-
-## 🔈 Acknowledgements
+Please cite our paper if you think our work is useful to your scientific research:
+```
+@article{wang2026sst,
+  title={Data-driven Modeling with Deep Koopman Operator for Robust Path Tracking of Autonomous Vehicles},
+  author={Zhuoxuan Wang and Shuguo Pan and Kegen Yu and Wang Gao and Zongliang Chen},
+  journal={IEEE Trans. Ind. Electron.}, 
+}
+```
