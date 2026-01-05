@@ -1,7 +1,7 @@
 <p align="center">
 <h1 align="center">Data-driven Modeling with Deep Koopman Operator for Robust Path Tracking of Autonomous Vehicles</h1>
 <h3 align="center" style="color: orange;">
-    🎊🎊🎊 The paper has been accepted by <em>IEEE Transactions on Industrial Electronics</em>, Jan. 2026. 🎊🎊🎊
+    IEEE Transactions on Industrial Electronic, Jan. 2026.
 </h3>
   <p align="center">
     <a href="https://scholar.google.com/citations?hl=zh-CN&user=G8sNV64AAAAJ" target="_blank"><strong>Zhuoxuan Wang</strong></a>
