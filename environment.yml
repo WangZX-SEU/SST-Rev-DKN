@@ -1,0 +1,67 @@
+name: myenv
+channels:
+  - nvidia
+  - conda-forge
+  - defaults
+dependencies:
+  # Python
+  - python=3.10.14
+
+  # Core PyTorch & CUDA
+  - pytorch=2.2.2
+  - pytorch-cuda=12.1
+  - torchvision=0.17.2
+  - torchaudio=2.2.2
+
+  # Data processing / scientific computing
+  - numpy=1.26.4
+  - scipy=1.12.0
+  - pandas=2.2.3
+  - networkx=3.1
+  - mpmath=1.3.0
+  - gmpy2=2.1.2
+
+  # Visualization / plotting
+  - matplotlib=3.8.4
+  - tensorboard=2.16.2
+
+  # Machine learning utilities
+  - scikit-learn=1.6.1
+  - joblib=1.4.2
+
+  # File, data, and XML handling
+  - pyyaml=6.0.1
+  - openpyxl=3.1.5
+  - et-xmlfile=2.0.0
+  - defusedxml=0.7.1
+
+  # Packaging / network / text utilities
+  - requests=2.31.0
+  - urllib3=2.1.0
+  - certifi=2024.8.30
+  - charset-normalizer=2.0.4
+  - idna=3.4
+  - packaging=24.0
+
+  # Optional / supporting packages
+  - absl-py=2.1.0
+  - grpcio=1.62.2
+  - jinja2=3.1.3
+  - protobuf=5.26.1
+  - pycparser=2.22
+  - pyparsing=3.1.2
+  - typing_extensions=4.9.0
+  - werkzeug=3.0.2
+  - markupsafe=2.1.5
+  - cycler=0.12.1
+  - cffi=1.17.1
+  - cython=3.0.11
+  - decorator=5.1.1
+  - tqdm=4.67.1
+
+  # Pip packages (Hugging Face Transformers & other pip-only)
+  - pip
+  - pip:
+      - transformers==4.35.0
+      - tokenizers==0.15.0
+      - sentencepiece==0.1.99
