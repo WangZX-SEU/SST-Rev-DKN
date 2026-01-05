@@ -40,36 +40,88 @@ Inherent nonlinearity poses challenges for path tracking control of autonomous v
 ## 🔗 Paper Link 
 
 ## 🧩 Source code
-We provide the source code for SST-Rev-DKN training and a pre-trained weight $(\mathcal{L}_{MW}=8)$.
+We provide the source code for SST-Rev-DKN training and a pre-trained weight $(\mathcal{L}_{MW}=8)$ in `SST-Rev-DKN/Data/Weights/`.
 
 ### Prerequisites
 Our training environment is based on **Anaconda**. The key dependencies and versions are as follows:
 ```bash
-python == 3.10.1
+# Python
+python == 3.10.14
+
+# PyTorch & CUDA
+pytorch == 2.2.2
+pytorch-cuda == 12.1
+torchvision == 0.17.2
+torchaudio == 2.2.2
+
+# Data processing / scientific computing
+numpy == 1.26.4
+scipy == 1.12.0
+pandas == 2.2.3
+
+# Utilities / visualization
+matplotlib == 3.8.4
+tensorboard == 2.16.2
+scikit-learn == 1.6.1
+
+# Optional / supporting packages
+pyyaml == 6.0.1
+tqdm == 4.67.1
 
 ```
-> **Note:** Make sure that the PyTorch version is compatible with your **CUDA** and **Python** versions. 
+> **Note 1:** Make sure that the PyTorch version is compatible with your **CUDA** and **Python** versions.
 
-### Dataset
-We provide an example dataset in [GoogleDrive](https://drive.google.com/drive/u/1/folders/1kNL4vJs-EyE-F0nHdsBcYA7ocwuNiJ_0). Please downloading the dataset/create your own dataset and place it under the `SST-Rev-DKN/Data/` directory before training.
+> **Note 2:** For the complete dependencies, please refer to the **Usage** below. 
 
 ### Usage
+
+#### Dataset
+We provide an example dataset in [GoogleDrive](https://drive.google.com/drive/u/1/folders/1kNL4vJs-EyE-F0nHdsBcYA7ocwuNiJ_0). Please download the dataset/create your own dataset and place it under the `SST-Rev-DKN/Data/` directory before training.
+
+#### Install Dependencies
+Create and activate the Conda environment using the provided `environment.yml`:
+
 ```bash
-# Downloading and Unpackaging the Repository
-https://github.com/WangZX-SEU/SST-Rev-DKN
+# Create the environment from the provided environment.yml
+conda env create -f environment.yml
 
-# Navigate to project directory
+# Activate the environment
+conda activate myenv
+```
+
+> **Note:** If you want to give the environment a custom name, you can use:
+```bash
+conda env create -f environment.yml -n <env_name>
+conda activate <env_name>
+```
+
+#### Clone the Repository
+```bash
+git clone https://github.com/WangZX-SEU/SST-Rev-DKN.git
+```
+
+#### Navigate to Project Directory
+```bash
 cd SST-Rev-DKN/Train/
+```
 
-# Key Parameters
-"load_mode": 1 for training mode
-"X_EMB_SIZE": State embedding dimension
-"U_EMB_SIZE": Input embedding dimension
-"BATCH_SIZE": Batch size, default is 128
-"MEMORY_STEP": Memory window length
+#### Key Parameters
+```bash
+|   Parameter   |         Description         |
+| ------------- | --------------------------- |
+| `load_mode`   |   `1` for training mode     |
+| `X_EMB_SIZE`  |  State embedding dimension  |
+| `U_EMB_SIZE`  |  Input embedding dimension  |
+| `BATCH_SIZE`  | Batch size (default: `128`) |
+| `MEMORY_STEP` |    Memory window length     |
 
-# Start Training
-run "SST_Rev_DKN.py"
+```
+These parameters can be adjusted in the training script.
+
+#### Start Training
+Run the following command to start training:
+```bash
+python SST_Rev_DKN.py
 ```
 
 ## ✒️ Citation
