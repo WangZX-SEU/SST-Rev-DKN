@@ -39,6 +39,9 @@ Inherent nonlinearity poses challenges for path tracking control of autonomous v
 
 ## 🔗 Paper Link 
 
+## 📕 Dataset
+We provide an example dataset in [GoogleDrive](https://drive.google.com/drive/u/1/folders/1kNL4vJs-EyE-F0nHdsBcYA7ocwuNiJ_0). After downloading, you can extract it to the `SST-Rev-DKN/Data` directory (Just ).
+
 ## 🧩 Source code
 Releasing soon...
 
