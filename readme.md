@@ -106,16 +106,15 @@ cd SST-Rev-DKN/Train/
 ```
 
 #### Key Parameters
-```bash
-|   Parameter   |         Description         |
-| ------------- | --------------------------- |
-| `load_mode`   |   `1` for training mode     |
-| `X_EMB_SIZE`  |  State embedding dimension  |
-| `U_EMB_SIZE`  |  Input embedding dimension  |
-| `BATCH_SIZE`  | Batch size (default: `128`) |
-| `MEMORY_STEP` |    Memory window length     |
 
-```
+| Parameter     | Description                 | Default Value |
+|:-------------:|:---------------------------:|:-------------:|
+| `load_mode`   | `1` for training mode       | -             |
+| `X_EMB_SIZE`  | State embedding dimension   | 16            |
+| `U_EMB_SIZE`  | Input embedding dimension   | 8             |
+| `BATCH_SIZE`  | Batch size                  | 128           |
+| `MEMORY_STEP` | Memory window length        | 8             |
+
 These parameters can be adjusted in the training script.
 
 #### Start Training
