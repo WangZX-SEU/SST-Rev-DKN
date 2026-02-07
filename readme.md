@@ -38,6 +38,7 @@ Inherent nonlinearity poses challenges for path tracking control of autonomous v
 
 
 ## 🔗 Paper Link 
+[Data-driven Modeling with Deep Koopman Operator for Robust Path Tracking of Autonomous Vehicles](https://ieeexplore.ieee.org/document/11373019)
 
 ## 🧩 Source code
 We provide the source code for SST-Rev-DKN training and a pre-trained weight $(\mathcal{L}_{MW}=8)$ in `SST-Rev-DKN/Data/Weights/`.
